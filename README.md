@@ -1,5 +1,5 @@
 # my-function
 
 ## 데이터 처리 (단변량)
-- ```eda1_n.py```: 수치형 변수의 단변량 분석
-- ```eda1_c.py```: 범주형 변수의 단변량 분석
+- `univariateEDA.py`: 단변량 분석 함수
+- `multivariateEDA.py`: 다변량 분석 함수
