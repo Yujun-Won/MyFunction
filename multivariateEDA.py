@@ -6,7 +6,7 @@ from statsmodels.graphics.mosaicplot import mosaic
 
 
 # 두 변수의 관계 분석(이변량 분석): 숫자 → 숫자
-def eda2_nn(data, var1, var2):
+def multivariate_EDA_numeric2numeric(data, var1, var2):
     # 수치화: 상관분석
     print(spst.pearsonr(data[var1], data[var2]))
 
@@ -22,7 +22,7 @@ def eda2_nn(data, var1, var2):
 
 
 # 두 변수의 관계 분석(이변량 분석): 숫자 → 범주
-def eda2_nc(data, col1, col2):
+def multivariate_EDA_numeric2category(data, col1, col2):
     # 시각화 1: kdeplot
     plt.figure(figsize=(8, 10))
     plt.subplot(2, 1, 1)
@@ -35,7 +35,7 @@ def eda2_nc(data, col1, col2):
 
 
 # 두 변수의 관계 분석(이변량 분석): 범주 → 범주
-def eda2_cc(data, col1, col2):
+def multivariate_EDA_category2category(data, col1, col2):
     # 수치화: crosstab
     table = pd.crosstab(data[col1], data[col2])
     print(table)
